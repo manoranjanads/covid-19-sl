@@ -48,7 +48,8 @@ function Dashboard() {
           <Switch>
             <Route path="/hospitals">
               <Typography variant="h5">
-                Sri Lankan Hospital Activated for Coronavirus
+                ශ්‍රී ලංකාවේ කොරෝනා ආසාධිතයින් සඳහා වෙන්කළ රෝහල් වල දැනට තත්වය
+                (Sri Lanka Hospitals Reserved for Coronavirus)
               </Typography>
               <Typography variant="subtitle1">{`Last updated (SL Time): ${stats.dashboard.update_date_time}`}</Typography>
               <HospitalList tableData={stats.hospitalData} />

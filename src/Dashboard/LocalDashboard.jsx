@@ -24,7 +24,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_new_cases}
             colorLevel={red[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="Local (New Cases) - නව ආසධිතයින්"
+            cardTitle="නව ආසධිතයින් - (New cases)"
           />
         </Grid>
         <Grid item xs>
@@ -32,7 +32,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_total_cases}
             colorLevel={orange[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="Local (Total cases) - මුළු ආසාධිතයින්"
+            cardTitle="මුළු ආසාධිතයින් - (Total cases)"
           />
         </Grid>
         <Grid item xs>
@@ -40,7 +40,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_recovered}
             colorLevel={green[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="Local (Recovered) - සුවය ලැබූ"
+            cardTitle="සුවය ලැබූ (Recovered)"
           />
         </Grid>
       </Grid>
@@ -50,7 +50,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_deaths}
             colorLevel={grey[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="Local (Deaths) - මුළු මරණ"
+            cardTitle="මුළු මරණ - (Total Deaths)"
           />
         </Grid>
         <Grid item xs>
@@ -58,7 +58,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_new_deaths}
             colorLevel={blueGrey[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="Local (New deaths) - නව මරණ"
+            cardTitle="නව මරණ - (New deaths)"
           />
         </Grid>
         <Grid item xs>
@@ -66,7 +66,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_total_number_of_individuals_in_hospitals}
             colorLevel={amber[800]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="Total (in Observation) - මුළු අධීක්ෂණ"
+            cardTitle="අධීක්ෂණය වන මුළු රෝගීන් - (In Observation)"
           />
         </Grid>
       </Grid>
