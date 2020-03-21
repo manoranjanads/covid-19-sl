@@ -12,14 +12,14 @@ function Navbar() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" className={classes.title} noWrap>
-          ශ්‍රී ලංකාවේ නව කොරෝනා ව්‍යාප්තිය (Real-time)
+          <strong>ශ්‍රී ලංකාවේ නව කොරෝනා ව්‍යාප්තිය (Real-time)</strong>
         </Typography>
 
         <MenuItem component={Link} to="/">
-          Dashboard
+          ප්‍රධාන පුවරුව (Dashboard)
         </MenuItem>
         <MenuItem component={Link} to="/hospitals">
-          Hospitals
+          රෝහල් වල තත්වය (Hospital Status)
         </MenuItem>
       </Toolbar>
     </AppBar>
