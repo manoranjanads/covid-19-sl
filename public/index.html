@@ -84,48 +84,21 @@
 
     <div id="root"></div>
 
-    <br /><br /><br />
-    <div class="footer-nav">
-      <p>
-        <center></center>Copyright © Coronavirus Updates - Sri Lanka. All Rights Reserved.
+    <br />
+
+    <p align="center">
+      <font color="#B7B5B5">
+        Copyright © Coronavirus Updates - Sri Lanka. All Rights Reserved.
         Powered by
-        <a href="https://smartvalley.lk" target="_blank">
-          Smart Valley Sri Lanka</a
-        ></center>
-      </p>
-      <br /><br /><br />
-    </div>
-
-    <script id="rendered-js">
-      $(window).scroll(function(event) {
-        function footer() {
-          var scroll = $(window).scrollTop();
-          if (scroll > 50) {
-            $(".footer-nav")
-              .fadeIn("slow")
-              .addClass("show");
-          } else {
-            $(".footer-nav")
-              .fadeOut("slow")
-              .removeClass("show");
-          }
-
-          clearTimeout($.data(this, "scrollTimer"));
-          $.data(
-            this,
-            "scrollTimer",
-            setTimeout(function() {
-              if ($(".footer-nav").is(":hover")) {
-                footer();
-              } else {
-                $(".footer-nav").fadeOut("slow");
-              }
-            }, 2000)
-          );
-        }
-        footer();
-      });
-      //# sourceURL=pen.js
-    </script>
+      </font>
+      <a
+        href="https://smartvalley.lk"
+        target="_blank"
+        style="text-decoration:none;"
+      >
+        <font color="#979797">Smart Valley Sri Lanka</font></a
+      >
+    </p>
+    <br />
   </body>
 </html>
