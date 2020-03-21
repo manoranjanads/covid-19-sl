@@ -24,7 +24,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_new_cases}
             colorLevel={red[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="නව ආසාධිතයන් - (New cases)"
+            cardTitle="නව ආසාදිතයන් - (New cases)"
           />
         </Grid>
         <Grid item xs>
@@ -32,7 +32,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_total_cases}
             colorLevel={orange[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="මුළු ආසාධිතයන් - (Total cases)"
+            cardTitle="මුළු ආසාදිතයන් - (Total cases)"
           />
         </Grid>
         <Grid item xs>
