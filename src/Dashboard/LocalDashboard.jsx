@@ -58,7 +58,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_new_deaths}
             colorLevel={blueGrey[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="නව මරණ - (New deaths)"
+            cardTitle="නව මරණ - (New Deaths)"
           />
         </Grid>
         <Grid item xs>
