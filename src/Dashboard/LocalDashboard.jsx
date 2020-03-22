@@ -24,7 +24,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_new_cases}
             colorLevel={red[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="නව ආසාදිතයන් - (New Cases)"
+            cardTitle="නව ආසාදිතයන් (New Cases)"
           />
         </Grid>
         <Grid item xs>
@@ -32,7 +32,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_total_cases}
             colorLevel={orange[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="මුළු ආසාදිතයන් - (Total Cases)"
+            cardTitle="මුළු ආසාදිතයන් (Total Cases)"
           />
         </Grid>
         <Grid item xs>
@@ -50,7 +50,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_new_deaths}
             colorLevel={blueGrey[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="නව මරණ - (New Deaths)"
+            cardTitle="නව මරණ (New Deaths)"
           />
         </Grid>
         <Grid item xs>
@@ -58,7 +58,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_deaths}
             colorLevel={grey[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="මුළු මරණ - (Total Deaths)"
+            cardTitle="මුළු මරණ (Total Deaths)"
           />
         </Grid>
         <Grid item xs>
@@ -66,7 +66,7 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_total_number_of_individuals_in_hospitals}
             colorLevel={amber[800]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="අධීක්ෂණය වන මුළු රෝගීන් - (In Observation)"
+            cardTitle="අධීක්ෂණය වන (In Observation)"
           />
         </Grid>
       </Grid>

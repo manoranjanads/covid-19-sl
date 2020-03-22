@@ -1,59 +1,60 @@
-import React from 'react';
-import NumberFormat from 'react-number-format';
+import React from "react";
+import NumberFormat from "react-number-format";
 
 // Material Stuff
-import { Chip } from '@material-ui/core';
+import { Chip } from "@material-ui/core";
 
 function GlobalDashboard({ dashboardData }) {
   return (
     <React.Fragment>
-      Global new cases{' '}
+      නව ආසාදිත (New):{" "}
       <Chip
         label={
           <NumberFormat
             value={dashboardData.global_new_cases}
             thousandSeparator={true}
-            displayType={'text'}
+            displayType={"text"}
           />
         }
-      />{' '}
-      - Global total cases{' '}
+      />{" "}
+      <strong>|</strong> මුළු ආසාදිත (Total Cases):{" "}
       <Chip
         label={
           <NumberFormat
             value={dashboardData.global_total_cases}
             thousandSeparator={true}
-            displayType={'text'}
+            displayType={"text"}
+            color={"blue"}
           />
         }
-      />{' '}
-      - Global deaths{' '}
-      <Chip
-        label={
-          <NumberFormat
-            value={dashboardData.global_deaths}
-            thousandSeparator={true}
-            displayType={'text'}
-          />
-        }
-      />{' '}
-      - Global new deaths{' '}
+      />{" "}
+      <strong>|</strong> නව මරණ (New Deaths):{" "}
       <Chip
         label={
           <NumberFormat
             value={dashboardData.global_new_deaths}
             thousandSeparator={true}
-            displayType={'text'}
+            displayType={"text"}
           />
         }
-      />{' '}
-      - Global new recovered{' '}
+      />{" "}
+      <strong>|</strong> මුළු මරණ (Total Deaths):{" "}
+      <Chip
+        label={
+          <NumberFormat
+            value={dashboardData.global_deaths}
+            thousandSeparator={true}
+            displayType={"text"}
+          />
+        }
+      />{" "}
+      <strong>|</strong> සුව වූ (Recoverd):{" "}
       <Chip
         label={
           <NumberFormat
             value={dashboardData.global_recovered}
             thousandSeparator={true}
-            displayType={'text'}
+            displayType={"text"}
           />
         }
         color="primary"

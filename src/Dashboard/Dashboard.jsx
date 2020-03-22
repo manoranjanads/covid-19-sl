@@ -35,6 +35,15 @@ function Dashboard() {
       <div>
         <LocalDashboard dashboardData={stats.dashboard} />
         <Paper style={{ marginTop: 20 }} />
+        <br></br>
+        <br></br>
+        <hr width="80%"></hr>
+        <br></br>
+        <h2>
+          <font color="gray">ගෝලීය තත්වය</font>
+        </h2>
+        <br></br>
+
         <GlobalDashboard dashboardData={stats.dashboard} />
       </div>
     );
