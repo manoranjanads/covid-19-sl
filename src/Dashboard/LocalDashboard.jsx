@@ -47,18 +47,18 @@ function LocalDashboard({ dashboardData }) {
       <Grid container spacing={1}>
         <Grid item xs>
           <DashboardCard
-            count={dashboardData.local_deaths}
-            colorLevel={grey[300]}
-            lastUpdated={dashboardData.update_date_time}
-            cardTitle="මුළු මරණ - (Total Deaths)"
-          />
-        </Grid>
-        <Grid item xs>
-          <DashboardCard
             count={dashboardData.local_new_deaths}
             colorLevel={blueGrey[300]}
             lastUpdated={dashboardData.update_date_time}
             cardTitle="නව මරණ - (New Deaths)"
+          />
+        </Grid>
+        <Grid item xs>
+          <DashboardCard
+            count={dashboardData.local_deaths}
+            colorLevel={grey[300]}
+            lastUpdated={dashboardData.update_date_time}
+            cardTitle="මුළු මරණ - (Total Deaths)"
           />
         </Grid>
         <Grid item xs>
