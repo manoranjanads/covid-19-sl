@@ -9,17 +9,18 @@ function Navbar() {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Toolbar>
         <Typography variant="h6" className={classes.title} noWrap>
           <strong>ශ්‍රී ලංකාවේ නව කොරෝනා ව්‍යාප්තිය (සජීව දත්ත)</strong>
         </Typography>
+        <Typography style={{ flex: 0.8 }}></Typography>
 
         <MenuItem component={Link} to="/">
           පුවරුව (Dashboard)
         </MenuItem>
-        <MenuItem component={Link} to="/hospitals">
-          රෝහල් වල තත්වය (Hospital Status)
+        <MenuItem component={Link} to="/hospitals" style={{ flex: 1 }}>
+          රෝහල් තතු (Hospital Status)
         </MenuItem>
       </Toolbar>
     </AppBar>
