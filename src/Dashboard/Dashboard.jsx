@@ -33,6 +33,7 @@ function Dashboard() {
   const localDasboard = () => {
     return (
       <div>
+        <br></br> <br></br>
         <LocalDashboard dashboardData={stats.dashboard} />
         <Paper style={{ marginTop: 20 }} />
         <br></br>
@@ -43,7 +44,6 @@ function Dashboard() {
           <font color="gray">ගෝලීය තත්වය</font>
         </h2>
         <br></br>
-
         <GlobalDashboard dashboardData={stats.dashboard} />
       </div>
     );
