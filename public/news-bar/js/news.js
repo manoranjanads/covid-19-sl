@@ -328,7 +328,7 @@
     autostart: true,
     property: "value",
     onComplete: null,
-    duration: 250000,
+    duration: 300000,
     padding: 10,
     marquee_class: ".marquee",
     container_class: ".simple-marquee-container",
@@ -336,3 +336,9 @@
     hover: true
   };
 })(jQuery, window, document);
+
+(function blink() {
+  $(".blink_txt")
+    .fadeOut(1100)
+    .fadeIn(500, blink);
+})();
