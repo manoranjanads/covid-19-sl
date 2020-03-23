@@ -7,7 +7,7 @@
 }
 .simple-marquee-container {
   width: 100%;
-  background: grey;
+  background: #2d0035;
   float: left;
   display: inline-block;
   overflow: hidden;
@@ -19,7 +19,7 @@
 
 .simple-marquee-container .marquee-sibling {
   padding: 0;
-  background: rgb(255, 23, 23);
+  background: rgb(230, 1, 1);
   width: 20%;
   height: 45px;
   line-height: 42px;
