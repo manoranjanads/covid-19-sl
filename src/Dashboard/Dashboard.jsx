@@ -38,7 +38,7 @@ function Dashboard() {
         <Paper style={{ marginTop: 20 }} />
         <br></br>
         <br></br>
-        <hr width="80%"></hr>
+        <hr width="100%"></hr>
         <br></br>
         <h2>
           <font color="gray">ගෝලීය තත්වය</font>

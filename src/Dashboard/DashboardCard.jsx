@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 // Material Stuff
 import {
@@ -8,12 +8,12 @@ import {
   makeStyles,
   CardHeader,
   Avatar
-} from '@material-ui/core';
+} from "@material-ui/core";
 
 function DashboardCard(props) {
   const useStyles = makeStyles({
     root: {
-      maxWidth: 280
+      maxWidth: 500
     },
     media: {
       height: 140

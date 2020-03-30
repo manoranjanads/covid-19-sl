@@ -22,9 +22,19 @@ function LocalDashboard({ dashboardData }) {
         <Grid item xs>
           <DashboardCard
             count={dashboardData.local_new_cases}
+            colorLevel={red[600]}
+            lastUpdated={dashboardData.update_date_time}
+            cardTitle="නව ආසාදිත (New Cases)"
+          />
+        </Grid>
+        <Grid item xs>
+          <DashboardCard
+            count={
+              dashboardData.local_total_cases - dashboardData.local_recovered
+            }
             colorLevel={red[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="නව ආසාදිතයන් (New Cases)"
+            cardTitle="දැනට ආසාදිත (Active Cases)"
           />
         </Grid>
         <Grid item xs>
@@ -32,9 +42,11 @@ function LocalDashboard({ dashboardData }) {
             count={dashboardData.local_total_cases}
             colorLevel={orange[300]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="මුළු ආසාදිතයන් (Total Cases)"
+            cardTitle="මුළු ආසාදිත (Total Cases)"
           />
         </Grid>
+
+        <Grid container spacing={1}></Grid>
         <Grid item xs>
           <DashboardCard
             count={dashboardData.local_recovered}
@@ -43,8 +55,7 @@ function LocalDashboard({ dashboardData }) {
             cardTitle="සුවය ලැබූ (Recovered)"
           />
         </Grid>
-      </Grid>
-      <Grid container spacing={1}>
+
         <Grid item xs>
           <DashboardCard
             count={dashboardData.local_new_deaths}
@@ -61,12 +72,13 @@ function LocalDashboard({ dashboardData }) {
             cardTitle="මුළු මරණ (Total Deaths)"
           />
         </Grid>
+        <Grid container spacing={1}></Grid>
         <Grid item xs>
           <DashboardCard
             count={dashboardData.local_total_number_of_individuals_in_hospitals}
             colorLevel={amber[800]}
             lastUpdated={dashboardData.update_date_time}
-            cardTitle="අධීක්ෂණය වන (In Observation)"
+            cardTitle="රෝහල් ගත කර අධීක්ෂණය වන මුළු රෝගීන් (Total Observed in Hospitals)"
           />
         </Grid>
       </Grid>
