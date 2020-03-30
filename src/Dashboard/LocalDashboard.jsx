@@ -23,7 +23,7 @@ function LocalDashboard({ dashboardData }) {
           <DashboardCard
             count={dashboardData.local_new_cases}
             colorLevel={red[600]}
-            lastUpdated={dashboardData.update_date_time}
+            // lastUpdated={dashboardData.update_date_time}
             cardTitle="නව ආසාදිත (New Cases)"
           />
         </Grid>
@@ -33,7 +33,7 @@ function LocalDashboard({ dashboardData }) {
               dashboardData.local_total_cases - dashboardData.local_recovered
             }
             colorLevel={red[300]}
-            lastUpdated={dashboardData.update_date_time}
+            // lastUpdated={dashboardData.update_date_time}
             cardTitle="දැනට ආසාදිත (Active Cases)"
           />
         </Grid>
@@ -41,7 +41,7 @@ function LocalDashboard({ dashboardData }) {
           <DashboardCard
             count={dashboardData.local_total_cases}
             colorLevel={orange[300]}
-            lastUpdated={dashboardData.update_date_time}
+            // lastUpdated={dashboardData.update_date_time}
             cardTitle="මුළු ආසාදිත (Total Cases)"
           />
         </Grid>
@@ -51,7 +51,7 @@ function LocalDashboard({ dashboardData }) {
           <DashboardCard
             count={dashboardData.local_recovered}
             colorLevel={green[300]}
-            lastUpdated={dashboardData.update_date_time}
+            // lastUpdated={dashboardData.update_date_time}
             cardTitle="සුවය ලැබූ (Recovered)"
           />
         </Grid>
@@ -60,7 +60,7 @@ function LocalDashboard({ dashboardData }) {
           <DashboardCard
             count={dashboardData.local_new_deaths}
             colorLevel={blueGrey[300]}
-            lastUpdated={dashboardData.update_date_time}
+            // lastUpdated={dashboardData.update_date_time}
             cardTitle="නව මරණ (New Deaths)"
           />
         </Grid>
@@ -77,7 +77,7 @@ function LocalDashboard({ dashboardData }) {
           <DashboardCard
             count={dashboardData.local_total_number_of_individuals_in_hospitals}
             colorLevel={amber[800]}
-            lastUpdated={dashboardData.update_date_time}
+            // lastUpdated={dashboardData.update_date_time}
             cardTitle="රෝහල් ගත කර අධීක්ෂණය වන මුළු රෝගීන් (Total Observed in Hospitals)"
           />
         </Grid>

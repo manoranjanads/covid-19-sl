@@ -36,6 +36,12 @@ function Dashboard() {
         <br></br> <br></br>
         <LocalDashboard dashboardData={stats.dashboard} />
         <Paper style={{ marginTop: 20 }} />
+        <small>
+          <font color="#B7B5B5">
+            {`අවසන් යාවත්කාලීන වීම (ශ්‍රී ලංකා වේලාව) - Last updated (SL Time):`}
+          </font>{" "}
+          <font color="#79CFFF">{`${stats.dashboard.update_date_time}`}</font>
+        </small>
         <br></br>
         <br></br>
         <hr width="100%"></hr>
@@ -45,6 +51,14 @@ function Dashboard() {
         </h2>
         <br></br>
         <GlobalDashboard dashboardData={stats.dashboard} />
+        <br></br>
+        <br></br>
+        <small>
+          <font color="#B7B5B5">
+            {`අවසන් යාවත්කාලීන වීම (ශ්‍රී ලංකා වේලාව) - Last updated (SL Time):`}
+          </font>{" "}
+          <font color="#79CFFF">{`${stats.dashboard.update_date_time}`}</font>
+        </small>
       </div>
     );
   };
@@ -67,7 +81,7 @@ function Dashboard() {
                   (Sri Lanka Hospitals Reserved for Coronavirus){" "}
                 </strong>
               </Typography>
-              <Typography variant="subtitle1">{`Last updated (SL Time): ${stats.dashboard.update_date_time}`}</Typography>
+              <Typography variant="subtitle1">{`අවසන් යාවත්කාලීන වීම (ශ්‍රී ලංකා වේලාව) - Last updated (SL Time): ${stats.dashboard.update_date_time}`}</Typography>
               <HospitalList tableData={stats.hospitalData} />
             </Route>
             <Route path="/">

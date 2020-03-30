@@ -41,7 +41,7 @@ function DashboardCard(props) {
             </Typography>
           </Avatar>
         </div>
-        <small>{`Last updated: ${props.lastUpdated}`}</small>
+        {/* <small>{`Last updated: ${props.lastUpdated}`}</small> */}
       </CardContent>
     </Card>
   );
