@@ -328,7 +328,7 @@
     autostart: true,
     property: "value",
     onComplete: null,
-    duration: 200200,
+    duration: 200800,
     padding: 10,
     marquee_class: ".marquee",
     container_class: ".simple-marquee-container",
