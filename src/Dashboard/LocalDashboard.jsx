@@ -2,7 +2,6 @@ import React from "react";
 
 // Material stuff
 import {
-  blue,
   orange,
   green,
   grey,

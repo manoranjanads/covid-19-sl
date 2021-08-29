@@ -10,7 +10,7 @@ import {
   Table
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { blue, green, red } from "@material-ui/core/colors";
+import { blue, green } from "@material-ui/core/colors";
 
 // My stuff
 import HospitalCount from "./HospitalCount";
